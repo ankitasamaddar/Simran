@@ -32,9 +32,27 @@ next_year = current_year + 1
 print(f"next year: {next_year} type: {type(next_year).__name__}")
 
 #CALCULATIONS
+# Constants for Canadian GST and Manitoba PST rates
+GST_RATE = 0.05  # Assuming 5% for GST. Please update this if the rate has changed.
+PST_RATE = 0.07  # Assuming 7% for Manitoba PST. Please update this if the rate has changed.
+
+# Declare a variable for the vehicle price and initialize it
+vehicle_price = 80000.50  # Sample value, you can adjust this as needed
+
+# Calculate GST and PST tax values for the vehicle
+gst_value = vehicle_price * GST_RATE
+pst_value = vehicle_price * PST_RATE
+
+# Determine the total cost of the vehicle
+total_cost = vehicle_price + gst_value + pst_value
+
+# Print results using an f-string for formatted output
+output = f"pre-tax value: ${vehicle_price:,.2f} PST: ${pst_value:,.2f} GST: ${gst_value:,.2f} total: ${total_cost:,.2f}"
+print(output)
 
 
 #LISTS
+
 
 #TUPLES
 

@@ -52,11 +52,103 @@ print(output)
 
 
 #LISTS
+# 1. Declare a list and initialize it to the values 1 through 10 inclusive.
+numbers_list = list(range(1, 11))
+
+# 4. Add the name "Simran" to the list between the values of 5 and 6.
+numbers_list.insert(5, "Simran")
+
+# 6. Remove the number 9 from the list.
+numbers_list.remove(9)
+
+# 8. Create a second list containing the values 'A', 'B', and 'C'.
+letters_list = ['A', 'B', 'C']
+
+# 9. Create a third list containing the values of the first and second lists.
+combined_list = numbers_list + letters_list
+
+# Print the lists
+print("List after adding Simran:", numbers_list)
+print("Combined list:", combined_list)
 
 
 #TUPLES
+# 1. Declare a tuple and initialize it to the names of 4 Canadian provinces.
+provinces_tuple = ("Ontario", "Quebec", "British Columbia", "Alberta")
+
+# 2. Print the tuple.
+print(provinces_tuple)
+
+# 3. Verify a tuple has been created by printing the data type of the tuple.
+print(type(provinces_tuple))
 
 #DICTIONARIES
+# 1. Declare a dictionary with the specified keys and values.
+currency_dict = {
+    'nickel': 0.05,
+    'dime': 0.10,
+    'quarter': 0.25
+}
+
+# 2. Print the dictionary.
+print(currency_dict)
+
+# 3. Verify a dictionary has been created by printing the data type of the dictionary.
+print(type(currency_dict))
+
+# 4. Modify the values of each of the items in the dictionary to use whole numbers.
+currency_dict['nickel'] = 5
+currency_dict['dime'] = 10
+currency_dict['quarter'] = 25
+
+# 5. Print the dictionary.
+print(currency_dict)
+
+# 6. Add two items to the dictionary representing the loonie and toonie.
+currency_dict['loonie'] = 100
+currency_dict['toonie'] = 200
+
+# 7. Print the dictionary.
+print(currency_dict)
+
 
 #SETS
 
+# 1. Declare a set containing even numbers between 2 and 20.
+even_numbers_set = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20}
+
+# 2. Print the set.
+print(even_numbers_set)
+
+# 3. Verify a set has been created by printing the data type of the set.
+print(type(even_numbers_set))
+
+# 4. Declare a set containing multiples of 5 between 5 and 20.
+multiples_of_5_set = {5, 10, 15, 20}
+
+# 5. Print the set.
+print(multiples_of_5_set)
+
+# 6. Declare a set which contains each unique value of the two sets created above.
+combined_set = even_numbers_set.union(multiples_of_5_set)
+
+# 7. Print the set.
+print(combined_set)
+
+# 8. Declare a set which contains only those values that appear in both sets.
+intersection_set = even_numbers_set.intersection(multiples_of_5_set)
+
+# 9. Print the set.
+print(intersection_set)
+
+# 10. Declare a set which contains only those values that appear in the first set but not in the second set.
+difference_set_1 = even_numbers_set.difference(multiples_of_5_set)
+
+# 11. Print the set.
+print(difference_set_1)
+
+# 12. Declare a set which contains only those values that appear in the second set but not in the first set.
+difference_set_2 = multiples_of_5_set.difference(even_numbers_set)
+
+# 13. Print the set.
+print(difference_set_2)

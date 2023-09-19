@@ -1,8 +1,8 @@
 """
-Description: [A brief description of the file's purpose]
-Author: [Your name]
-Date: [Creation or modification date]
-Usage: [How to use or run the file, if applicable]
+Description: [Python code]
+Author: [Simran]
+Date: [19/09/2023]
+Usage: [Select the code and run]
 """
 
 
